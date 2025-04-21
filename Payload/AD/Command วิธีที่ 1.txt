@@ -1,0 +1,1 @@
+Start-Process "C:\Users\user\Desktop\ad_reverse.exe"
